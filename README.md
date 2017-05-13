@@ -8,7 +8,7 @@ docker 学习笔记
 # Dockerfile demo 
 docker inspect --format='{status:{{.State.Status}},IPAddress:{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}}' a1
 FROM  hub.c.163.com/library/tomcat:7.0-jre7
-MAINTAINER " <wx756523427@gmail.com>"
+MAINTAINER " <XX27@gmail.com>"
 RUN rm -rvf /usr/local/tomcat/webapps/ROOT
 ADD wxsmall.war /usr/local/tomcat/webapps/ROOT.war
 EXPOSE 8080
